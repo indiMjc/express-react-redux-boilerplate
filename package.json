@@ -1,8 +1,12 @@
 {
-  "name": "express-react-app-boilerplate",
+  "name": "express-react-redux-app-boilerplate",
   "version": "1.0.0",
-  "description": "Node app with express and react",
-  "main": "index.js",
+  "description": "Node app with express and react/redux boilerplate",
+  "main": "api/index.js",
+  "scripts": {
+    "server": "nodemon index.js",
+    "start": "node index.js"
+  },
   "author": "indiMjc <45151346+indiMjc@users.noreply.github.com>",
   "license": "MIT",
   "devDependencies": {
