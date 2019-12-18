@@ -1,10 +1,12 @@
 const express = require('express');
 const helmet = require('helmet');
 const cors = require('cors');
-const sessions = require('express-sessions');
+const sessions = require('express-session');
 const KnexSessionStore = require('connect-session-knex')(sessions);
 
 const knex = require('../data/dbConfig.js');
+
+const server = express();
 
 const sessionConfig = {
   name: 'christmas cookies',
